@@ -3,6 +3,8 @@ A "simple" problem of regression where it is necessary to estimate a score from 
 
 This problem is very simple to understand: there is a company that needs to estimate a credit card score for new potential clients. They have an historical database with 300 features where each row contains a lot of information from their clients. Due to security protocols, both sensitive data and field names were anonymized, so we will have to estimate the score with a blindfold on the eyes.
 
+**I strongly recommend using Google Colab to run these scripts**, since the algorithms that I tested require a lot of computing and memory capacity. The best thing is that GColab is free!! You can find a tutorial [here](https://medium.com/deep-learning-turkey/google-colab-free-gpu-tutorial-e113627b9f5d).
+
 Let's get started!
 
 # How to solve the problem
@@ -143,3 +145,15 @@ The best model was generated according to the given specifications.
     -	lightgbm
     -	math
     -	pickle
+
+# Instructions to run the regression model
+
+1. Download all the files:
+- "dataset.zip": contains the dataset in CSV format.
+- “execute.py”: Python executable file (3.6 or higher).
+- “model.sav”: regression model.
+- “training_script.ipynb”: code used to train the model. Please note that it was done using an interactive interface (Jupyter).
+2. Extract the files into the folder of your choice. It is necessary that the files "model.sav" and "execute.py" are in the same folder, otherwise you will not be able to execute the model.
+3. From the command line, execute the file "execute.py".
+4. Once you are executing the file "execute.py" enter the name of the file or the path to the file that contains the data. If the data file is in the same folder, just type the name (i.e.: mydataset.csv)
+**This development was done in Windows.**
